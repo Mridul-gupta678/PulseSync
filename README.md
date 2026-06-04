@@ -87,7 +87,7 @@ The system is built for scalability and resilience: each concern is isolated int
 | **Redux Toolkit** | Global state management for auth and JWTs |
 | **Axios** | HTTP client with custom interceptors for authenticated requests |
 
-### Backend Infrastructure
+### Backend Infrastructure (My fav part)
 
 | Service | Technology | Purpose |
 |---|---|---|
