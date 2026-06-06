@@ -256,6 +256,6 @@ The application will be available at `http://localhost:5173` (or the port config
 <div align="center">
 
 Built with ❤️ using Spring Boot, React, and the power of Generative AI.
-Mridul Gupta
+-- Mridul Gupta
 
 </div>
