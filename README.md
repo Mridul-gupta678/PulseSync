@@ -107,10 +107,10 @@ The system is built for scalability and resilience: each concern is isolated int
 
 ## ✨ Core Features
 
-### 🔐 Security & User Synchronization
+### 🔐 Security & User Synchronization:
 The API Gateway intercepts all incoming requests and validates JWTs against **Keycloak**. A custom gateway filter automatically synchronizes newly authenticated Keycloak users into the backend user database using their unique Keycloak ID — no manual registration required.
 
-### 🔄 Inter-Service Communication
+### 🔄 Inter-Service Communication:
 
 **Synchronous (WebClient)**
 Before persisting a new workout, the Activity Service calls the User Service to confirm the user exists, ensuring data integrity across service boundaries.
@@ -118,14 +118,14 @@ Before persisting a new workout, the Activity Service calls the User Service to 
 **Asynchronous (RabbitMQ)**
 Once an activity is saved, the Activity Service publishes an event to a RabbitMQ message queue. The AI Service consumes the message independently, keeping the primary request path fast and non-blocking.
 
-### 🗄 Polyglot Persistence
+### 🗄 Polyglot Persistence:
 Each service owns its database, choosing the technology best suited for its data structure:
 - **PostgreSQL** for structured relational user data
 - **MongoDB** for schema-flexible workout metrics and AI responses
 
 ---
 
-## 🧠 AI Recommendations Engine
+## 🧠 AI Recommendations Engine:
 
 PulseSync's standout capability is its real-time, personalized fitness analysis powered by **Generative AI**.
 
@@ -161,7 +161,7 @@ Event published to RabbitMQ ─────────────────�
 
 ---
 
-## 🚀 Local Setup & Installation
+## 🚀 Local Setup & Installation:
 
 ### Prerequisites
 
